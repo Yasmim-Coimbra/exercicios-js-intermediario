@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+}
+
+.upper-block {
+    background-color: blue;
+}
+
+.lower-block {
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.changed-block {
+    background-color: yellow;
+}
