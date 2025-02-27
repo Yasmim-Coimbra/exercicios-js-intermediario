@@ -7,5 +7,11 @@ let blockToChange = document.getElementsByClassName('upper-block')[0]
 
 colorSwitchBtn
 .addEventListener("click", function trocarCor() {
-    blockToChange.classList.add('changed-block')
+    if (blockToChange.classList.contains('upper-block')) {
+        blockToChange.classList.remove('upper-block')
+        blockToChange.classList.add('changed-block')
+    } else {
+        blockToChange.classList.remove('changed-block')
+        blockToChange.classList.add('upper-block')
+    }
 })
